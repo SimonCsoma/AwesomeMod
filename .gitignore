@@ -15,6 +15,7 @@
 /src/minecraft_server/*
 /src/common/*
 !/src/common/mcmod.info
+!/src/minecraft/awesome/*
 
 *.bat
 *.sh
