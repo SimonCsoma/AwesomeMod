@@ -21,7 +21,7 @@ public class Awesome {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		// Stub edit
+		// Stub edit voor olaf zodat hij weer kan pullen
 	}
 	
 	@EventHandler
