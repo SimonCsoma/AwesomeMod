@@ -13,7 +13,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class RenderBunny extends RenderLiving{
 
-	private static final ResourceLocation field_110833_a = new ResourceLocation("assets/awesome/textures/entity/bunny/bunny.png");
+	private static final ResourceLocation field_110833_a = new ResourceLocation("awesome:texture/entity/bunny/bunny.png");
 
     public RenderBunny(ModelBase par1ModelBase, float par2)
     {

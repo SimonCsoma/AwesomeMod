@@ -15,6 +15,7 @@
 /src/minecraft/*
 !/src/minecraft/awesome
 !/src/minecraft/awesome/*
+!/src/minecraft/assets
 
 /src/minecraft_server/*
 /src/common/*

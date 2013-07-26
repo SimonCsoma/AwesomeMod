@@ -33,7 +33,7 @@ public class Awesome {
 		proxy.registerRenderers();
 		EntityRegistry.registerModEntity(EntityBunny.class, "Bunny", 2, this, 80, 3, true);
 		EntityRegistry.addSpawn(EntityBunny.class, 5, 2, 6, EnumCreatureType.creature, BiomeGenBase.plains);
-        LanguageRegistry.instance().addStringLocalization("entity.instance.yourMob.name", "Your Mob");
+        LanguageRegistry.instance().addStringLocalization("entity.instance.bunny.bunny", "Bunny");
 	}
 	
 	@EventHandler
