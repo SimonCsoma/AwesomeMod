@@ -8,6 +8,7 @@ import net.minecraft.client.model.ModelRenderer;
 //Keep in mind that you still need to fill in some blanks
 //- ZeuX
 import net.minecraft.entity.Entity;
+import net.minecraft.util.MathHelper;
 
 public class ModelBunny extends ModelBase {
  ModelRenderer body;
@@ -124,5 +125,6 @@ public class ModelBunny extends ModelBase {
 	 */ 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+		this.leg1.rotateAngleX = MathHelper.cos(f * 0.66662F) + 1.4F * f1;
 	}
 }
