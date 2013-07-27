@@ -34,6 +34,15 @@ public class EntityBunny extends EntityAnimal {
 		this.setEntityHealth(3);
     }
 	
+	public void onUpdate(){
+		if(this.posX != this.prevPosX || this.posZ != this.prevPosZ){
+			this.setJumping(true);
+		} else {
+			this.setJumping(false);
+		}
+		super.onUpdate();
+	}
+	
 	public boolean isAIEnabled() {
 		return true;
 	}
