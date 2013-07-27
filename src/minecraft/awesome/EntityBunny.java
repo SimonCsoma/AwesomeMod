@@ -25,14 +25,13 @@ public class EntityBunny extends EntityAnimal {
 		
 		this.tasks.addTask(0, new EntityAISwimming(this));
 		this.tasks.addTask(1, new EntityAIPanic(this, 0.6D));
-		this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
-		this.tasks.addTask(3, new EntityAITempt(this, 1.0D, Item.carrot.itemID, false));
+		this.tasks.addTask(2, new EntityAIMate(this, 0.3D));
+		this.tasks.addTask(3, new EntityAITempt(this, 0.5D, Item.carrot.itemID, false));
 		this.tasks.addTask(4, new EntityAIFollowParent(this, 0.28F));
 		this.tasks.addTask(5, new EntityAIWander(this, 0.5D));
 		this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
 		this.tasks.addTask(7, new EntityAILookIdle(this));
 		this.setEntityHealth(3);
-		
     }
 	
 	public boolean isAIEnabled() {

@@ -28,71 +28,45 @@ public class ModelBunny extends ModelBase {
 		body = new ModelRenderer(this, 0, 0);
 		body.addBox(-3F, 0F, -5F, 6, 6, 10);
 		body.setRotationPoint(0F, 16F, 3F);
-		body.setTextureSize(64, 32);
-//		body.mirror = true;
-		setRotation(body, 0F, 0F, 0F);
 	      
 		head = new ModelRenderer(this, 22, 0);
 		head.addBox(-2.5F, -2.5F, -5F, 5, 5, 5);
 		head.setRotationPoint(0F, 18.5F, -2F);
-		head.setTextureSize(64, 32);
-//		head.mirror = true;
-		setRotation(head, 0F, 0F, 0F);
 		
 		nose = new ModelRenderer(this, 22, 0);
 		nose.addBox(-0.5F, 1F, -5.5F, 1, 1, 1);
 		nose.setRotationPoint(0F, 18F, -2F);
-		nose.setTextureSize(64, 32);
-//		nose.mirror = true;
-		setRotation(nose, 0F, 0F, 0F);
 
 		ear2 = new ModelRenderer(this, 37, 0);
 		ear2.addBox(-1F, 0F, 0F, 2, 1, 4);
 		ear2.setRotationPoint(1.5F, 16F, -4F);
-		ear2.setTextureSize(64, 32);
-//		ear2.mirror = true;
 		setRotation(ear2, 0.5934119F, 0F, 0F);
 		
 		ear1 = new ModelRenderer(this, 49, 0);
 		ear1.addBox(-1F, 0F, 0F, 2, 1, 4);
 		ear1.setRotationPoint(-1.5F, 16F, -4F);
-		ear1.setTextureSize(64, 32);
-//		ear1.mirror = true;
 		setRotation(ear1, 0.5934119F, 0F, 0F);
 		
 		leg1 = new ModelRenderer(this, 37, 5);
 		leg1.addBox(-1F, 0F, -5F, 2, 2, 5);
 		leg1.setRotationPoint(-2F, 22F, 8F);
-		leg1.setTextureSize(64, 32);
-//		leg1.mirror = true;
-		setRotation(leg1, 0F, 0F, 0F);
 
 		leg2 = new ModelRenderer(this, 37, 12);
 		leg2.addBox(-1F, 0F, -5F, 2, 2, 5);
 		leg2.setRotationPoint(2F, 22F, 8F);
-		leg2.setTextureSize(64, 32);
-//		leg2.mirror = true;
-		setRotation(leg2, 0F, 0F, 0F);
 		
 		tail = new ModelRenderer(this, 32, 12);
 		tail.addBox(-1.5F, -1.5F, 0F, 3, 3, 2);
 		tail.setRotationPoint(0F, 18F, 8F);
-		tail.setTextureSize(64, 32);
-//		tail.mirror = true;
-		setRotation(tail, 0F, 0F, 0F);
 		
 		leg3 = new ModelRenderer(this, 0, 0);
 		leg3.addBox(-1F, 0F, 0F, 2, 4, 1);
 		leg3.setRotationPoint(2F, 21F, -1F);
-		leg3.setTextureSize(64, 32);
-//		leg3.mirror = true;
 		setRotation(leg3, -1.012291F, 0F, 0F);
 		
 		leg4 = new ModelRenderer(this, 0, 5);
 		leg4.addBox(-1F, 0F, 0F, 2, 4, 1);
 		leg4.setRotationPoint(-2F, 21F, -1F);
-		leg4.setTextureSize(64, 32);
-//		leg4.mirror = true;
 		setRotation(leg4, -1.012291F, 0F, 0F);
 	  }
 	  
