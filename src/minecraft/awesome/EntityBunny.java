@@ -40,6 +40,9 @@ public class EntityBunny extends EntityAnimal {
 		} else {
 			this.setJumping(false);
 		}
+		if(!this.isInLove()){
+			this.inLove = 600;
+		}
 		super.onUpdate();
 	}
 	
