@@ -40,7 +40,7 @@ public class EntityBunny extends EntityAnimal {
 		} else {
 			this.setJumping(false);
 		}
-		if(!this.isInLove()){
+		if(!this.isInLove() && (this.canMateWith(this))){
 			this.inLove = 600;
 		}
 		super.onUpdate();
