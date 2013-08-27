@@ -1,5 +1,7 @@
 package awesome;
 
+import org.lwjgl.opengl.GL11;
+
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 //Date: 25-7-2013 19:42:01
@@ -74,16 +76,47 @@ public class ModelBunny extends ModelBase {
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		super.render(entity, f, f1, f2, f3, f4, f5);
 		setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-		body.render(f5);
-		head.render(f5);
-		nose.render(f5);
-		ear2.render(f5);
-		ear1.render(f5);
-		leg1.render(f5);
-		leg2.render(f5);
-		tail.render(f5);
-		leg3.render(f5);
-		leg4.render(f5);
+		
+		if(this.isChild) {
+			float f6 = 2.0F;
+			
+			GL11.glPushMatrix();
+			GL11.glScalef(1.5F / f6, 1.5F / f6, 1.5F / f6);
+            GL11.glTranslatef(0.0F, 9F * f5, 2.5F * f5);
+			head.render(f5);
+			nose.render(f5);
+			ear1.render(f5);
+			ear2.render(f5);
+			GL11.glPopMatrix();
+			
+			GL11.glPushMatrix();
+			GL11.glScalef(1.4F / f6, 1.4F / f6, 1.4F / f6);
+			GL11.glTranslatef(0.0F, 12.5F * f5, -3.0F * f5);
+			tail.render(f5);
+			GL11.glPopMatrix();
+			
+			GL11.glPushMatrix();
+			GL11.glScalef(1.0F / f6, 1.0F / f6, 1.0F / f6);
+			GL11.glTranslatef(0.0F, 24.0F * f5, 0.0F);
+			body.render(f5);
+			leg1.render(f5);
+			leg2.render(f5);
+			leg3.render(f5);
+			leg4.render(f5);
+			GL11.glPopMatrix();
+		}
+		else {
+			body.render(f5);
+			head.render(f5);
+			nose.render(f5);
+			ear2.render(f5);
+			ear1.render(f5);
+			leg1.render(f5);
+			leg2.render(f5);
+			tail.render(f5);
+			leg3.render(f5);
+			leg4.render(f5);
+		}
 	}
 	  
 	private void setRotation(ModelRenderer model, float x, float y, float z) {
@@ -99,6 +132,6 @@ public class ModelBunny extends ModelBase {
 	 */ 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-		this.leg1.rotateAngleX = MathHelper.cos(f * 0.66662F) + 1.4F * f1;
+		//this.leg1.rotateAngleX = MathHelper.cos(f * 0.66662F) + 1.4F * f1;
 	}
 }
