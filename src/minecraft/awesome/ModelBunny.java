@@ -70,7 +70,7 @@ public class ModelBunny extends ModelBase {
 		leg4 = new ModelRenderer(this, 0, 5);
 		leg4.addBox(-1F, 0F, 0F, 2, 4, 1);
 		leg4.setRotationPoint(-2F, 21F, -1F);
-		setRotation(leg4, -1.012291F, 0F, 0F);
+		setRotation(leg4, 0F, 0F, 0F);
 	  }
 	  
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
@@ -132,6 +132,10 @@ public class ModelBunny extends ModelBase {
 	 */ 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-		//this.leg1.rotateAngleX = MathHelper.cos(f * 0.66662F) + 1.4F * f1;
+		this.leg1.rotateAngleX = MathHelper.abs(MathHelper.sin(f * 0.4F) * f1);
+		this.leg2.rotateAngleX = this.leg1.rotateAngleX;
+		
+		this.leg3.rotateAngleX = MathHelper.abs(-MathHelper.sin(f * 0.4F) * f1 + 5.25F);
+		this.leg4.rotateAngleX = this.leg3.rotateAngleX;
 	}
 }

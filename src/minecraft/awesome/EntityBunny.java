@@ -57,7 +57,7 @@ public class EntityBunny extends EntityAnimal {
 	
 	protected void fall(float par1) {}
     
-	public EntityBunny spawnAnimal(EntityAgeable par1EntityAgeable) {
+	public EntityBunny spawnBabyAnimal(EntityAgeable par1EntityAgeable) {
 		return new EntityBunny(this.worldObj);
 	}
 	
@@ -68,6 +68,6 @@ public class EntityBunny extends EntityAnimal {
 	@Override
 	public EntityAgeable createChild(EntityAgeable entityageable) {
 		// TODO Auto-generated method stub
-		return this.spawnAnimal(entityageable);
+		return this.spawnBabyAnimal(entityageable);
 	}
 }
